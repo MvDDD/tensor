@@ -5,32 +5,29 @@ function diff(a, b) {
 	return Math.abs(a - b);
 }
 
-let model = new Tensor({ nodes: [1, 2, 3, 4, 5, 6, 7, 8, 7, 6, 5, 4, 3, 2, 1] });
-let model2 = new Tensor({ nodes: [1, 2, 3, 4, 5, 6, 7, 8, 7, 6, 5, 4, 3, 2, 1]});
-model.nodeCalc = (prev, val)=>{return (prev +1) * val}
-model2.nodeCalc = (prev, val)=>{return (prev +1) * val}
-console.log("{")
-for (let i = 0; i < 10; i += 0.01) {
-	model.train([i], 100, 0.1);
-	model2.train([i], 100, 100);
+let model = new Tensor({ nodes: [1, 1, 1] }, "qua");
+
+;(async()=>{
+	let corr = 0
+	let wrong = 0
+	while (corr + wrong < 1000){
+for (let i = 0; i < 100; i += 1){
+	await model.train([i], 100, 0.1);
 	model.select((a, b) => {
-		return diff(a.in[0], a.out[0]) > diff(b.in[0], b.out[0]);
-	});
-	model2.select((a, b) => {
 		return diff(a.in[0], a.out[0]) < diff(b.in[0], b.out[0]);
 	});
-	console.log([model.run([i])[0] - i, model2.run([i])[0] - i])
+	let p = [model.run([i])[0], parseFloat(i) ** 2]
+	console.log(p, Math.round(p[0]*1000) == Math.round(p[1]*1000))
+	if (Math.round(p[0]*1000) == Math.round(p[1]*1000)){corr += 1}else{wrong += 1}
+		if (((corr/wrong) <100000 )&&(corr > 1000)) break
 }
-console.log("}")
+}
 let r1 = []
-let r2 = []
-for (let i = 0; i < 10; i += 0.1) {
-	let run1 = model.run([i])
-	let run2 = model2.run([i])
-	r1.push(run1[0])
-	r2.push(run2[0])
+for (let i = 0; i < 10; i += 0.01) {
+	let p = [model.run([i])[0], i]
+	r1.push([Math.round(p[0]*10) == Math.round(p[1]*10), p])
 }
+fs.writeFileSync("model.json", JSON.stringify(model.GET_model(), null, 4), ()=>{})
 r1.forEach((run) => {console.log(((run)))});
-r2.forEach((run) => {console.log(((run)))});
 
-console.log(model.paths, model2.paths)
+})()

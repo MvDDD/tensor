@@ -1,0 +1,63 @@
+﻿
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : <!doctype html><html itemscope="" itemtype="http://schema.org/
+                    WebPage" lang="nl"><head><meta content="text/html; charset=UTF
+                    -8" http-equiv="Content-Type"><meta content="/images/branding/
+                    googleg/1x/goo...
+RawContent        : HTTP/1.1 200 OK
+                    Content-Security-Policy-Report-Only: object-src 'none';base-ur
+                    i 'self';script-src 'nonce-yI940cmnBwDG-xUDy4KxGg' 'strict-dyn
+                    amic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: ...
+Forms             : {f}
+Headers           : {[Content-Security-Policy-Report-Only, object-src 'none';base-
+                    uri 'self';script-src 'nonce-yI940cmnBwDG-xUDy4KxGg' 'strict-d
+                    ynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: h
+                    ttp:;report-uri https://csp.withgoogle.com/csp/gws/other-hp], 
+                    [X-XSS-Protection, 0], [X-Frame-Options, SAMEORIGIN], [Vary, A
+                    ccept-Encoding]...}
+Images            : {@{innerHTML=; innerText=; outerHTML=<IMG id=hplogo style="PAD
+                    DING-BOTTOM: 14px; PADDING-TOP: 28px; PADDING-LEFT: 0px; PADDI
+                    NG-RIGHT: 0px" alt=Google src="/images/branding/googlelogo/1x/
+                    googlelogo_white_background_color_272x92dp.png" width=272 heig
+                    ht=92>; outerText=; tagName=IMG; id=hplogo; style=PADDING-BOTT
+                    OM: 14px; PADDING-TOP: 28px; PADDING-LEFT: 0px; PADDING-RIGHT:
+                     0px; alt=Google; src=/images/branding/googlelogo/1x/googlelog
+                    o_white_background_color_272x92dp.png; width=272; height=92}}
+InputFields       : {@{innerHTML=; innerText=; outerHTML=<INPUT type=hidden value=
+                    nl name=hl>; outerText=; tagName=INPUT; type=hidden; value=nl;
+                     name=hl}, @{innerHTML=; innerText=; outerHTML=<INPUT type=hid
+                    den value=hp name=source>; outerText=; tagName=INPUT; type=hid
+                    den; value=hp; name=source}, @{innerHTML=; innerText=; outerHT
+                    ML=<INPUT type=hidden name=biw>; outerText=; tagName=INPUT; ty
+                    pe=hidden; name=biw}, @{innerHTML=; innerText=; outerHTML=<INP
+                    UT type=hidden name=bih>; outerText=; tagName=INPUT; type=hidd
+                    en; name=bih}...}
+Links             : {@{innerHTML=<SPAN class=gbtb2></SPAN><SPAN class=gbts>Zoeken<
+                    /SPAN>; innerText=Zoeken; outerHTML=<A id=gb_1 class="gbzt gbz
+                    0l gbp1" href="https://www.google.nl/webhp?tab=ww"><SPAN class
+                    =gbtb2></SPAN><SPAN class=gbts>Zoeken</SPAN></A>; outerText=Zo
+                    eken; tagName=A; id=gb_1; class=gbzt gbz0l gbp1; href=https://
+                    www.google.nl/webhp?tab=ww}, @{innerHTML=<SPAN class=gbtb2></S
+                    PAN><SPAN class=gbts>Afbeeldingen</SPAN>; innerText=Afbeelding
+                    en; outerHTML=<A id=gb_2 class=gbzt href="https://www.google.c
+                    om/imghp?hl=nl&amp;tab=wi"><SPAN class=gbtb2></SPAN><SPAN clas
+                    s=gbts>Afbeeldingen</SPAN></A>; outerText=Afbeeldingen; tagNam
+                    e=A; id=gb_2; class=gbzt; href=https://www.google.com/imghp?hl
+                    =nl&amp;tab=wi}, @{innerHTML=<SPAN class=gbtb2></SPAN><SPAN cl
+                    ass=gbts>Maps</SPAN>; innerText=Maps; outerHTML=<A id=gb_8 cla
+                    ss=gbzt href="http://maps.google.nl/maps?hl=nl&amp;tab=wl"><SP
+                    AN class=gbtb2></SPAN><SPAN class=gbts>Maps</SPAN></A>; outerT
+                    ext=Maps; tagName=A; id=gb_8; class=gbzt; href=http://maps.goo
+                    gle.nl/maps?hl=nl&amp;tab=wl}, @{innerHTML=<SPAN class=gbtb2><
+                    /SPAN><SPAN class=gbts>Play</SPAN>; innerText=Play; outerHTML=
+                    <A id=gb_78 class=gbzt href="https://play.google.com/?hl=nl&am
+                    p;tab=w8"><SPAN class=gbtb2></SPAN><SPAN class=gbts>Play</SPAN
+                    ></A>; outerText=Play; tagName=A; id=gb_78; class=gbzt; href=h
+                    ttps://play.google.com/?hl=nl&amp;tab=w8}...}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 53443
+
+
+
